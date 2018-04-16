@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>form</title>
 </head>
 <body>
   <header class="page-header">
   <a class="page-header__logo-link" href="#">
-    <img class="page-header__logo-image" src="#" alt="logo" >
+    <img class="page-header__logo-image" src="#" alt="logo" />
   </a>
 
   <nav class="main-nav">
@@ -31,73 +31,59 @@
 
     <section class="info">
       <form action="/" method="post">
-        <label for="name">Фамилия<br>
-          <input class="info__form--name text-form" type="text" id="name" value="Укажите фамилию *"><br>
-        </label>
-        <label for="surname">Имя<br>
-          <input class="info__form--surname text-form" type="text" id="surname" value="Введите ваше имя *"><br>
-        </label>
-        <label for="name">Отчество<br>
-          <input class="info__form--father-name text-form" type="text" id="father-name" value="Ну и отчество тоже"><br>
-        </label>
-      </form>
+        <fieldset class="info__name">
+          <label for="name">Фамилия<br>
+            <input class="info__form--name text-form" type="text" id="name" value="Укажите фамилию *"><br>
+          </label>
+          <label for="surname">Имя<br>
+            <input class="info__form--surname text-form" type="text" id="surname" value="Введите ваше имя *"><br>
+          </label>
+          <label for="name">Отчество<br>
+            <input class="info__form--father-name text-form" type="text" id="father-name" value="Ну и отчество тоже"><br>
+          </label>
+        </fieldset>
     </section>
 
     <section class="checkbox">
       <div class="checkbox__inner">
         <p class="checkbox__text">Ваши безбашенные достижения в путешествии</p>
         <div class="checkbox__filter">
-          <form action="/" method="post">
           <input type="checkbox" class="checkbox__item" id="selfie" checked>
           <label for="selfie">Сделал селфи с акулой</label>
-          </form>
         </div>
         <div class="checkbox__filter">
-          <form action="/" method="post">
           <input type="checkbox" class="checkbox__item" id="sun" checked>
           <label for="sun">Обгорел на пляже</label>
-          </form>
         </div>
         <div class="checkbox__filter">
-          <form action="/" method="post">
           <input type="checkbox" class="checkbox__item" id="Chuck">
           <label for="Chuck">Видел Чака Норриса</label>
-          </form>
         </div>
         <div class="checkbox__filter">
-          <form action="/" method="post">
           <input type="checkbox" class="checkbox__item" id="souvenir">
           <label for="souvenir">Накупил сувениров</label>
-          </form>
         </div>
         <div class="checkbox__filter">
-          <form action="/" method="post">
           <input type="checkbox" class="checkbox__item" id="tower" checked>
           <label for="tower">Удержал башню</label>
-          </form>
         </div>
         <div class="checkbox__filter">
-          <form action="/" method="post">
           <input type="checkbox" class="checkbox__item" id="hotel">
           <label for="hotel">Разгромил отель</label>
-          </form>
         </div>
       </div>
     </section>
 
     <section class="info phone-email">
-      <form action="/" method="post">
         <label for="phone">Номер телефона<br>
           <input class="info__form--phone text-form" type="text" id="phone" value="Номер, пожалуйста"><br>
         </label>
         <label for="email">Адрес почты<br>
           <input class="info__form--email text-form" type="text" id="email" value="Введите почту *"><br>
         </label>
-      </form>
     </section>
 
     <section class="radio">
-      <form action="/" method="post">
         <label for="radio">
           <input class="radio__item" type="radio" name="radio" id="radio" value="1">Pink для iOS<br>
         </label>
@@ -107,7 +93,6 @@
         <label for="radio">
           <input class="radio__item" type="radio" name="radio" id="radio" value="3">Windows Phone<br>
         </label>
-      </form>
     </section>
 
     <section class="comment">
@@ -118,23 +103,24 @@
     <div class="submit">
       <input class="submit__button" type="submit" value="Отправить форму">
     </div>
+    </form>
 
   </main>
 
   <footer class="page-footer">
     <a class="page-footer__logo-link" href="#">
-      <img class="page-footer__logo-image" src="#" alt="logo" >
+      <img class="page-footer__logo-image" src="#" alt="logo" />
     </a>
     <div class="page-footer__social social">
       <ul class="page-footer__list social-list">
-        <li class="social__item"><a class="social-link social-link--twitter" href="#" ><img class="social-link__image social-link__image--twitter" src="#" alt="." width="18" height="14"></a></li>
-        <li class="social__item"><a class="social-link social-link--facebook" href="#" ><img class="social-link__image social-link__image--facebook" src="#" alt="." width="9" height="18"></a></li>
-        <li class="social__item"><a class="social-link social-link--youtube" href="#" ><img class="social-link__image social-link__image--youtube" src="#" alt="." width="15" height="13"></a></li>
+        <li class="social__item"><a class="social-link social-link--twitter" href="#" ><img class="social-link__image social-link__image--twitter" src="#" alt="." width="18" height="14" /></a></li>
+        <li class="social__item"><a class="social-link social-link--facebook" href="#" ><img class="social-link__image social-link__image--facebook" src="#" alt="." width="9" height="18" /></a></li>
+        <li class="social__item"><a class="social-link social-link--youtube" href="#" ><img class="social-link__image social-link__image--youtube" src="#" alt="." width="15" height="13" /></a></li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="#"><img class="copyright__image" src="#" alt="copyright__image" width="27" height="34"></a>
+      <a class="copyright__link" href="#"><img class="copyright__image" src="#" alt="copyright__image" width="27" height="34" /></a>
     </div>
   </footer>
 

@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>index</title>
 </head>
 <body>
 
 <header class="page-header">
   <a class="page-header__logo-link" href="#">
-    <img class="page-header__logo-image" src="#" alt="logo" >
+    <img class="page-header__logo-image" src="#" alt="logo" />
   </a>
 
   <nav class="main-nav">
@@ -26,24 +26,24 @@
 
 <main class="page-main">
   <section class="image-block">
-    <img class="image-block__image-hand" src="#" alt="phone">
-    <img class="image-block__image-monitor" src="№" alt="monitor">
+    <img class="image-block__hand" src="#" alt="phone" />
+    <img class="image-block__monitor" src="№" alt="monitor" />
   </section>
 
   <section class="download">
-    <div class="download-wrapper">
+    <div class="download__inner">
       <button class="button download__button">Скачать приложение</button>
       <ul class="download__list">
-        <li><img class="download__icon download__icon--apple" src="#" alt="icon-apple" width="47" height="56"></li>
-        <li><img class="download__icon download__icon--android" src="#" alt="icon-android" width="43" height="47"></li>
-        <li><img class="download__icon download__icon--windows" src="#" alt="icon-windows" width="44" height="41"></li>
+        <li><img class="download__icon download__icon--apple" src="#" alt="icon-apple" width="47" height="56" /></li>
+        <li><img class="download__icon download__icon--android" src="#" alt="icon-android" width="43" height="47" /></li>
+        <li><img class="download__icon download__icon--windows" src="#" alt="icon-windows" width="44" height="41" /></li>
       </ul>
       <p class="download__description">Доступно для iPhone, iPad, Andeoid, Windows Phone, OS X, Windows 8</p>
     </div>
   </section>
 
   <section class="advantages">
-    <div class="advantages-wrapper">
+    <div class="advantages__inner">
       <h2 class="advantages__headline">Устали от серости мегаполиса?</h2>
       <h2 class="advantages__headline">Нам есть, что вам предложить?</h2>
       <ul class="advantages__list">
@@ -60,20 +60,21 @@
           <p class="advantages__text">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых друзей</p>
         </li>
       </ul>
-      <img class="advantages__image" src="#" alt="advantages-image" class="advantages-image">
+      <img class="advantages__image" src="#" alt="advantages-image" class="advantages-image" />
     </div>
   </section>
 
   <section class="reviews">
-    <div class="reviews-wrapper">
-      <h3 class="reviews__reviewer-name ">Николай Петров</h3>
+    <div class="reviews__inner">
+      <h3 class="reviews__name ">Николай Петров</h3>
       <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-      <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
     </div>
+    <div class="reviews__toggles slider__toggles">
+      <button class="slider__toggle slider__toogle--active" type="button">1</button>
+      <button class="slider__toggle" type="button">2</button>
+      <button class="slider__toggle" type="button">3</button>
+    </div>
+
   </section>
 
   <section class="subscription">
@@ -105,11 +106,11 @@
         <li class="subscription_item">Смайлики</li>
         <li class="subscription_item">Комментарии</li>
       </ul>
-      <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
+    </div>
+    <div class="reviews__toggles slider__toggles">
+      <button class="slider__toggle slider__toogle--active" type="button">1</button>
+      <button class="slider__toggle" type="button">2</button>
+      <button class="slider__toggle" type="button">3</button>
     </div>
   </section>
 
@@ -117,19 +118,19 @@
     <div class="contact__wrapper">
       <p class="contact__headline">Остались вопросы?</p>
       <p class="contact__headline">Свяжитесь с нами!</p>
-      <div class="contact-block-phone">
+      <div class="contact__block">
         <p class="contact__text">Звоните:</p>
-        <p class="contact__phone">+7 (812) 555-66-66</p>
+        <p class="contact__text--red">+7 (812) 555-66-66</p>
       </div>
-      <div class="contact-block-email">
+      <div class="contact__block">
         <p class="contact__text">Пишите:</p>
-        <p class="contact__email">mail@htmlacademy.ru</p>
+        <p class="contact__text--red">mail@htmlacademy.ru</p>
       </div>
-      <div class="contact-block-address">
+      <div class="contact__block">
         <p class="contact__text">Приезжайте в гости:</p>
-        <p class="contact__address">ул. Большая Конюшенная, 19/8</p>
+        <p class="contact__text--red">ул. Большая Конюшенная, 19/8</p>
       </div>
-      <img class="contact__map" src="#" alt="map" >
+      <img class="contact__map" src="#" alt="map" />
     </div>
   </section>
 </main>
