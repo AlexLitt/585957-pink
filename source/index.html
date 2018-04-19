@@ -1,12 +1,142 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+<header class="page-header">
+  <a class="page-header__logo-link" href="#">
+    <img class="page-header__logo-image" src="#" alt="logo" />
+  </a>
 
-  </body>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
+        <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+        <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+        <li class="site-list__item"><a href="htmlacademy.ru">HTML ACADEMY</a></li>
+       </ul>
+     </div>
+   </nav>
+</header>
+
+<main class="page-main">
+  <section class="image-block">
+    <img class="image-block__hand" src="#" alt="phone" />
+    <img class="image-block__monitor" src="№" alt="monitor" />
+  </section>
+
+  <section class="download">
+    <div class="download__inner">
+      <button class="button download__button">Скачать приложение</button>
+      <ul class="download__list">
+        <li><img class="download__icon download__icon--apple" src="#" alt="icon-apple" width="47" height="56" /></li>
+        <li><img class="download__icon download__icon--android" src="#" alt="icon-android" width="43" height="47" /></li>
+        <li><img class="download__icon download__icon--windows" src="#" alt="icon-windows" width="44" height="41" /></li>
+      </ul>
+      <p class="download__description">Доступно для iPhone, iPad, Andeoid, Windows Phone, OS X, Windows 8</p>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <div class="advantages__inner">
+      <h2 class="advantages__headline">Устали от серости мегаполиса?</h2>
+      <h2 class="advantages__headline">Нам есть, что вам предложить?</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__text">Приложение позволит вам победить осеннюю ханлру и депрессию буквально в несколько кликов</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__text">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых друзей</p>
+        </li>
+      </ul>
+      <img class="advantages__image" src="#" alt="advantages-image" class="advantages-image" />
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="slider">
+      <ul class="slider__list">
+        <li class="slider__item review">
+          <h2 class="review__name">Николай Петров</h2>
+          <p class="review__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+        </li>
+      </ul>
+      <div class="slider__toggles">
+        <button class="slider__toggle slider__toogle--active" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="subscription">
+    <div class="subscription__wrapper">
+      <div class="subscription-info">
+        <h3 class="subscription-info__name subscription-info__name-hit">Стандарт</h3>
+        <p class="subscription-inf__price"> 3,99 USD</p>
+      </div>
+      <ul class="subscription_list">
+        <li class="subscription_item">Розовый фильтр</li>
+        <li class="subscription_item">Смайлики</li>
+        <li class="subscription_item">Комментарии</li>
+      </ul>
+      <div class="subscription-info">
+        <h3 class="subscription-info__name subscription-info__name-hit">Стандарт</h3>
+        <p class="subscription-inf__price"> 3,99 USD</p>
+      </div>
+      <ul class="subscription_list">
+        <li class="subscription_item">Розовый фильтр</li>
+        <li class="subscription_item">Смайлики</li>
+        <li class="subscription_item">Комментарии</li>
+      </ul>
+      <div class="subscription-info">
+        <h3 class="subscription-info__name subscription-info__name-hit">Стандарт</h3>
+        <p class="subscription-inf__price"> 3,99 USD</p>
+      </div>
+      <ul class="subscription_list">
+        <li class="subscription_item">Розовый фильтр</li>
+        <li class="subscription_item">Смайлики</li>
+        <li class="subscription_item">Комментарии</li>
+      </ul>
+    </div>
+    <div class="slider__toggles">
+      <button class="slider__toggle slider__toogle--active" type="button">1</button>
+      <button class="slider__toggle" type="button">2</button>
+      <button class="slider__toggle" type="button">3</button>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact__wrapper">
+      <p class="contact__headline">Остались вопросы?</p>
+      <p class="contact__headline">Свяжитесь с нами!</p>
+      <div class="contact__block">
+        <p class="contact__text">Звоните:</p>
+        <p class="contact__text--red">+7 (812) 555-66-66</p>
+      </div>
+      <div class="contact__block">
+        <p class="contact__text">Пишите:</p>
+        <p class="contact__text--red">mail@htmlacademy.ru</p>
+      </div>
+      <div class="contact__block">
+        <p class="contact__text">Приезжайте в гости:</p>
+        <p class="contact__text--red">ул. Большая Конюшенная, 19/8</p>
+      </div>
+      <img class="contact__map" src="#" alt="map" />
+    </div>
+  </section>
+</main>
+
+</body>
 </html>
