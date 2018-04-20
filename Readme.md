@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Литвиновский](https://up.htmlacademy.ru/adaptive/14/user/585957).
-* Наставник: [Александр Сенченко](https://htmlacademy.ru/profile/elementk0)
+* Наставник: [Александр Сенченко](https://htmlacademy.ru/profile/elementk0).
 
 ---
 
