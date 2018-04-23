@@ -3,40 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>index</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="page-header">
-  <a class="page-header__logo-link" href="#">
-    <img class="page-header__logo-image" src="#" alt="logo" />
-  </a>
+  <div class="page-header__inner">
+    <a class="page-header__logo-link" href="#">
+      <img class="page-header__logo-image" src="img\logotype-white-mobile-svg.svg" alt="logo" />
+    </a>
 
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
-        <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-        <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-        <li class="site-list__item"><a href="htmlacademy.ru">HTML ACADEMY</a></li>
-       </ul>
-     </div>
-   </nav>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="htmlacademy.ru">HTML ACADEMY</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="image-block">
+      <img class="image-block__hand" src="img\iphone-5-in-hand-png.png" alt="phone" />
+      <img class="image-block__monitor" src="№" alt="monitor" />
+    </section>
+  </div>
 </header>
 
 <main class="page-main">
-  <section class="image-block">
-    <img class="image-block__hand" src="#" alt="phone" />
-    <img class="image-block__monitor" src="№" alt="monitor" />
-  </section>
-
   <section class="download">
     <div class="download__inner">
       <button class="button download__button">Скачать приложение</button>
       <ul class="download__list">
-        <li><img class="download__icon download__icon--apple" src="#" alt="icon-apple" width="47" height="56" /></li>
-        <li><img class="download__icon download__icon--android" src="#" alt="icon-android" width="43" height="47" /></li>
-        <li><img class="download__icon download__icon--windows" src="#" alt="icon-windows" width="44" height="41" /></li>
+        <li><img class="download__icon download__icon--apple" src="img\logo-apple.svg" alt="icon-apple" width="47" height="56" /></li>
+        <li><img class="download__icon download__icon--android" src="img\logo-android.svg" alt="icon-android" width="43" height="47" /></li>
+        <li><img class="download__icon download__icon--windows" src="img\logo-microsoft.svg" alt="icon-windows" width="44" height="41" /></li>
       </ul>
       <p class="download__description">Доступно для iPhone, iPad, Andeoid, Windows Phone, OS X, Windows 8</p>
     </div>
@@ -44,8 +47,10 @@
 
   <section class="advantages">
     <div class="advantages__inner">
-      <h2 class="advantages__headline">Устали от серости мегаполиса?</h2>
-      <h2 class="advantages__headline">Нам есть, что вам предложить?</h2>
+      <div class="advantages__motto">
+        <h2 class="advantages__headline">Устали от серости мегаполиса?</h2>
+        <h2 class="advantages__headline">Нам есть, что вам предложить?</h2>
+      </div>
       <ul class="advantages__list">
         <li class="advantages__item">
           <h3 class="advantages__title">Поднимает настроение</h3>
@@ -60,7 +65,7 @@
           <p class="advantages__text">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых друзей</p>
         </li>
       </ul>
-      <img class="advantages__image" src="#" alt="advantages-image" class="advantages-image" />
+      <img class="advantages__image" src="img\iphone-screen--3.png" alt="advantages-image" class="advantages-image" />
     </div>
   </section>
 
@@ -123,17 +128,17 @@
       <p class="contact__headline">Свяжитесь с нами!</p>
       <div class="contact__block">
         <p class="contact__text">Звоните:</p>
-        <p class="contact__text--red">+7 (812) 555-66-66</p>
+        <p class="contact__text--inf">+7 (812) 555-66-66</p>
       </div>
       <div class="contact__block">
         <p class="contact__text">Пишите:</p>
-        <p class="contact__text--red">mail@htmlacademy.ru</p>
+        <p class="contact__text--inf">mail@htmlacademy.ru</p>
       </div>
       <div class="contact__block">
         <p class="contact__text">Приезжайте в гости:</p>
-        <p class="contact__text--red">ул. Большая Конюшенная, 19/8</p>
+        <p class="contact__text--inf">ул. Большая Конюшенная, 19/8</p>
       </div>
-      <img class="contact__map" src="#" alt="map" />
+      <img class="contact__map" src="img\layer-153.png" alt="map" />
     </div>
   </section>
 </main>
