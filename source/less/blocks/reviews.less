@@ -4,6 +4,21 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  margin-left: 83px;
+@media(min-width: 768px) {
+  line-height: 30px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  order:1;
+  margin-left: 243px;
+  margin-bottom: 0;
+}
+@media(min-width: 1024px) {
+  padding-left: 489px;
+  padding-right: 490px;
+  margin: 0;
+}
 }
 
 .review__text {
@@ -11,4 +26,69 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+@media(min-width: 768px) {
+  color: #283645;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  order:0;
+}
+@media(min-width: 1024px) {
+  color: #283645;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-left: 257px;
+  padding-right: 258px;
+  padding-top: 193px;
+}
+}
+
+.review__info {
+  display: none;
+@media(min-width: 768px) {
+  display: block;
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  order:2;
+  margin-left: 243px;
+  margin-top: 0;
+}
+@media(min-width: 1024px) {
+  padding-left: 489px;
+  padding-right: 490px;
+  margin: 0;
+}
+}
+
+.slider__list {
+  list-style: none;
+}
+
+.slider {
+@media(min-width: 768px) {
+  min-width: 660px;
+}
+}
+
+.slider__toggles {
+  margin-left: 132px;
+@media(min-width: 768px) {
+  margin-left: 352px;
+}
+}
+
+.slider__item {
+@media(min-width: 768px) {
+  min-width: 660px;
+  min-height: 184px;
+  display:flex;
+  flex-direction:column;
+}
+@media(min-width: 1024px) {
+  min-width: 1200px;
+  min-height: 429px;
+}
 }

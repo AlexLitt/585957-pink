@@ -3,20 +3,58 @@
   color: #283645;
   font-size: 24px;
   font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+@media(min-width: 768px) {
+  color: #283645;
+  font-size: 40px;
+  font-weight: 300;
+  min-width: 660px;
+  margin-top: 56px;
+  text-align: center;
+  line-height: 50px;
+}
+@media(min-width: 1024px) {
+  color: #283645;
+  font-size: 50px;
+  font-weight: 300;
+  padding-left: 373px;
+  padding-right: 371px;
+}
 }
 
 .contact__text {
   color: #283645;
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
+@media(min-width: 768px) {
+  margin-bottom: 0;
+}
 }
 
 .contact__text--inf {
   color: #d22856;
   font-size: 24px;
   font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .contact {
   min-height: 395px;
+@media(min-width: 1024px) {
+  min-width: 1200px;
+}
+}
+
+.contact__inner {
+@media(min-width: 1024px) {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 178px;
+  margin-top: 70px;
+}
 }
