@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <title>index</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="less/normalize.less">
   <base href="https://htmlacademy-adaptive.github.io/585957-pink/5/">
 </head>
 <body>
 <header class="page-header">
   <div class="page-header__inner">
     <a class="page-header__logo-link" href="#">
-      <img class="page-header__logo-image" src="img\logotype-white-mobile-svg.svg" alt="logo" width="22" height="75" />
+      <img class="page-header__logo-image" src="img\pink.png" alt="logo" width="75" height="22" />
     </a>
 
     <nav class="main-nav">
@@ -26,15 +27,16 @@
     </nav>
    </div>
 
+</header>
+
+<main class="page-main">
+
+  <section class="download">
     <section class="image-block">
       <img class="image-block__hand" src="#" alt="phone" />
       <img class="image-block__monitor" src="№" alt="monitor" />
     </section>
 
-</header>
-
-<main class="page-main">
-  <section class="download">
     <div class="download__inner">
       <h2 class="download__headline">Взгляните на жизнь иначе!</h2>
       <button class="button download__button">Скачать приложение</button>
@@ -53,20 +55,22 @@
         <h2 class="advantages__headline advantages__headline--top">Устали от серости мегаполиса?</h2>
         <h2 class="advantages__headline">Нам есть, что вам предложить?</h2>
       </div>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__text">Приложение позволит вам победить осеннюю ханлру и депрессию буквально в несколько кликов</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__text">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых друзей</p>
-          </li>
-        </ul>
+      <div class="advantages-list__container">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__text">Приложение позволит вам победить осеннюю ханлру и депрессию буквально в несколько кликов</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__text">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых друзей</p>
+            </li>
+          </ul>
+        </div>
         <img class="advantages__image" src="#" alt="advantages-image" class="advantages-image" />
     </div>
   </section>
@@ -156,6 +160,7 @@
 </main>
 
 <footer class="page-footer">
+  <div class="page-footer__inner">
     <a class="page-footer__logo-link" href="#">
       <img class="page-footer__logo-image" src="img\logotype-blue-tablet-svg.svg" alt="logo" />
     </a>
@@ -170,6 +175,7 @@
       <b class="copyright__text">Разработано:</b>
       <a class="copyright__link" href="#"><img class="copyright__image" src="img\htmlacademy.svg" alt="copyright__image" width="27" height="34" /></a>
     </div>
+  </div>
 </footer>
 </body>
 </html>
