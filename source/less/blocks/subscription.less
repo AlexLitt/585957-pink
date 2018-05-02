@@ -17,11 +17,7 @@
   margin: 0;
 }
 
-.subscription-info {
-  margin-left: 91px;
-  margin-right: 90px;
-  padding-top: 23px;
-}
+
 
 .subscription__item {
   color: #283645;
@@ -32,13 +28,36 @@
   list-style: none;
 }
 
+.subscription__wrapper {
+  width:320px;
+  min-height: 279px;
+  margin: 0 auto;
+}
+
+.subscription-info {
+  display:flex;
+  flex-direction: column;
+}
+
+.subscription__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+}
+
 .subscription {
   background-color: #f2f2f2;
-  min-height: 279px;
-@media(min-width: 768px) {
+
+@media(min-width: 660px) {
   min-width: 660px;
 }
-@media(min-width: 1024px) {
+@media(min-width: 960px) {
   min-width: 1200px;
   background-color: #f2f2f2;
 }
@@ -46,28 +65,28 @@
 
 .subscription-list--base {
   display: none;
-@media(min-width: 768px) {
+@media(min-width: 660px) {
   display: block;
 }
 }
 
 .subscription-info--base {
   display: none;
-@media(min-width: 768px) {
+@media(min-width: 660px) {
   display: block;
 }
 }
 
 .subscription-info--unlim {
   display: none;
-@media(min-width: 768px) {
+@media(min-width: 660px) {
   display: block;
 }
 }
 
 .subscription_list--unlim {
   display: none;
-@media(min-width: 768px) {
+@media(min-width: 660px) {
   display: block;
 }
 }

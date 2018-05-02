@@ -1,6 +1,14 @@
 
 .os {
   background-color: #f2f2f2;
+  width: 320px;
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
+  @media(min-width: 660px) {
+    width: 640px;
+    min-height: 300px;
+  }
 }
 
 .os__legend {
@@ -16,4 +24,22 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.os__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.os__legend {
+  width: 320px;
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
+  }
+
+
+.form__inner {
+  display:flex;
 }
