@@ -18,13 +18,16 @@
 
 .checkbox {
   background-color: #f2f2f2;
-  width: 320px;
-  padding: 0;
-  margin: 0 auto;
-  min-height: 606px;
   @media(min-width: 660px) {
-    width: 640px;
+    min-height: 550px;
   }
+  @media(min-width: 960px) {
+    min-width: 940px;
+    min-height: 230px;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
 }
 
 .checkbox__list {
@@ -33,6 +36,22 @@
   list-style: none;
 }
 
-.form__inner {
-  display: flex;
+.form__container {
+  width: 320px;
+  margin: 0 auto;
+  @media(min-width: 660px) {
+    width: 640px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  @media(min-width: 960px) {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
