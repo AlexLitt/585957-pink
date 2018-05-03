@@ -541,13 +541,6 @@ template {
   background-image: url("img\back-mobile-jpg.jpg");
   background-color: #1d2631;
 }
-@media (min-width: 960px) {
-  .page-header__logo-image {
-    padding-top: 27px;
-    padding-left: 130px;
-    padding-bottom: 43px;
-  }
-}
 .page-header__container {
   width: 320px;
   margin: 0 auto;
@@ -583,7 +576,7 @@ template {
 }
 @media (min-width: 960px) {
   .page-header__inner {
-    min-width: 1200px;
+    min-width: 940px;
     min-height: 110px;
     margin: 0 auto;
     display: -webkit-box;
@@ -666,6 +659,10 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 640px;
     margin: 0 auto;
     -webkit-box-pack: justify;
@@ -679,6 +676,10 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1239,14 +1240,19 @@ template {
 }
 .checkbox {
   background-color: #f2f2f2;
-  width: 320px;
-  padding: 0;
-  margin: 0 auto;
-  min-height: 606px;
 }
 @media (min-width: 660px) {
   .checkbox {
-    width: 640px;
+    min-height: 550px;
+  }
+}
+@media (min-width: 960px) {
+  .checkbox {
+    min-width: 940px;
+    min-height: 230px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
   }
 }
 .checkbox__list {
@@ -1254,10 +1260,38 @@ template {
   padding: 0;
   list-style: none;
 }
-.form__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.form__container {
+  width: 320px;
+  margin: 0 auto;
+}
+@media (min-width: 660px) {
+  .form__container {
+    width: 640px;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 960px) {
+  .form__container {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .comment__title {
   color: #d22856;
@@ -1299,6 +1333,12 @@ template {
     width: 640px;
   }
 }
+@media (min-width: 960px) {
+  .comment {
+    width: 940px;
+    min-height: 220px;
+  }
+}
 .button__container {
   width: 320px;
   margin: 0 auto;
@@ -1335,48 +1375,48 @@ template {
 }
 .info__name {
   border: 0;
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  min-height: 370px;
+  -webkit-box-ordinal-group: -1;
+      -ms-flex-order: -2;
+          order: -2;
 }
-@media (min-width: 660px) {
+@media (min-width: 960px) {
   .info__name {
-    width: 640px;
-    margin: 0 auto;
+    min-width: 435px;
+    min-height: 310px;
+    -webkit-box-ordinal-group: -4;
+        -ms-flex-order: -5;
+            order: -5;
+    padding: 0;
   }
 }
 .info__phone {
   border: 0;
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  min-height: 285px;
 }
-@media (min-width: 660px) {
+@media (min-width: 960px) {
   .info__phone {
-    width: 640px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    width: 940px;
+    min-height: 169px;
+    -webkit-box-ordinal-group: -2;
+        -ms-flex-order: -3;
+            order: -3;
+    padding: 0;
   }
-}
-.info__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .os {
   background-color: #f2f2f2;
-  width: 320px;
-  margin: 0 auto;
   border: 0;
   padding: 0;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
-@media (min-width: 660px) {
+@media (min-width: 960px) {
   .os {
-    width: 640px;
-    min-height: 300px;
+    min-width: 430px;
+    min-height: 310px;
+    -webkit-box-ordinal-group: -4;
+        -ms-flex-order: -5;
+            order: -5;
   }
 }
 .os__legend {
@@ -1396,17 +1436,6 @@ template {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-.os__legend {
-  width: 320px;
-  margin: 0 auto;
-  border: 0;
-  padding: 0;
-}
-.form__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 .research {
   display: none;
