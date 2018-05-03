@@ -5,6 +5,7 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .subscription-inf__price {
@@ -13,16 +14,79 @@
   font-weight: 300;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
 }
 
-.subscription_item {
+
+
+.subscription__item {
   color: #283645;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+  list-style: none;
+}
+
+.subscription__wrapper {
+  width:320px;
+  min-height: 279px;
+  margin: 0 auto;
+}
+
+.subscription-info {
+  display:flex;
+  flex-direction: column;
+}
+
+.subscription__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
 }
 
 .subscription {
   background-color: #f2f2f2;
+
+@media(min-width: 660px) {
+  min-width: 660px;
+}
+@media(min-width: 960px) {
+  min-width: 940px;
+  background-color: #f2f2f2;
+}
+}
+
+.subscription-list--base {
+  display: none;
+@media(min-width: 660px) {
+  display: block;
+}
+}
+
+.subscription-info--base {
+  display: none;
+@media(min-width: 660px) {
+  display: block;
+}
+}
+
+.subscription-info--unlim {
+  display: none;
+@media(min-width: 660px) {
+  display: block;
+}
+}
+
+.subscription_list--unlim {
+  display: none;
+@media(min-width: 660px) {
+  display: block;
+}
 }
