@@ -1,6 +1,22 @@
 
+
+.image-block {
+  min-height: 395px;
+  order: 1;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.image-block__hand {
+  padding-top: 110px;
+
+}
+
 .download {
   background-color: #1d2631;
+  @media(min-width: 660px) {
+    display: flex;
+}
 }
 
 .download__inner {
@@ -8,7 +24,7 @@
   min-height: 271px;
   margin: 0 auto;
   @media(min-width: 660px) {
-    min-height: 753px;
+    min-height: 629px;
     width: 640px;
     margin: 0 auto;
     background-color: #1d2631;
@@ -26,12 +42,16 @@
 .download__headline {
   display: none;
   @media(min-width: 660px) {
-    display: block;
+    display: inline;
     margin: 0;
     padding: 0;
     color: #ffffff;
     font-size: 40px;
     font-weight: 300;
+    padding-left: 78px;
+    padding-top: 103px;
+    padding-right: 396px;
+
   }
   @media(min-width: 960px) {
     color: #ffffff;
@@ -60,6 +80,8 @@
   border-radius: 30px;
 
   @media(min-width: 660px) {
+    width: 300px;
+    min-height: 55px;
   }
 
   @media(min-width: 960px) {
@@ -129,6 +151,6 @@
   align-items: baseline;
   margin: 0;
   padding: 0;
-  @media(min-width: 960px) {
+  @media(min-width: 660px) {
 }
 }

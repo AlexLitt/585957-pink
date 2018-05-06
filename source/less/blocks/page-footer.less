@@ -1,3 +1,8 @@
+
+.page-footer--hidden {
+  display: none;
+}
+
 .page-footer__inner {
   box-sizing: border-box;
   margin: 0 auto;
@@ -22,14 +27,22 @@
   }
 }
 
+
+.page-footer__logo-image {
+  display: block;
+  margin-top: 40px;
+}
+
 .social-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-
-
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 73px;
+  margin-right: 75px;
+  margin-bottom: 41px;
+  margin-top: 43px;
   @media(min-width: 660px) {
     display: flex;
     justify-content: space-between;
@@ -59,4 +72,8 @@
     margin: 0 auto;
 
   }
+}
+
+.page-footer__copyright {
+  margin-bottom: 40px;
 }

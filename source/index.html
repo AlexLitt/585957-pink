@@ -10,7 +10,7 @@
 <header class="page-header">
   <div class="page-header__inner">
     <a class="page-header__logo-link" href="#">
-      <img class="page-header__logo-image" src="img\pink.png" alt="logo" width="75" height="22" />
+      <img class="page-header__logo-image" src="img\logo-pink-white-mobile.svg" alt="logo" width="75" height="22" />
     </a>
 
     <nav class="main-nav">
@@ -31,14 +31,13 @@
 <main class="page-main">
 
   <section class="download">
-    <section class="image-block">
-      <img class="image-block__hand" src="#" alt="phone" />
-      <img class="image-block__monitor" src="№" alt="monitor" />
-    </section>
+    <div class="image-block">
+      <img class="image-block__hand" src="img\iphone-hand-mobile@1x.png" alt="phone" />
+    </div>
 
     <div class="download__inner">
       <h2 class="download__headline">Взгляните на жизнь иначе!</h2>
-      <button class="button download__button">Скачать приложение</button>
+      <button class="download__button">Скачать приложение</button>
       <ul class="download__list">
         <li><img class="download__icon download__icon--apple" src="img\logo-apple.svg" alt="icon-apple" width="47" height="56" /></li>
         <li><img class="download__icon download__icon--android" src="img\logo-android.svg" alt="icon-android" width="43" height="47" /></li>
@@ -69,8 +68,8 @@
               <p class="advantages__text">Ставьте лайки, комментриуйте, делитесь фотографиями с друзьями и заводите новых друзей</p>
             </li>
           </ul>
+          <img class="advantages__image" src="img\iphone-screen-mobile@1x.png" alt="advantages-image" class="advantages-image" />
         </div>
-        <img class="advantages__image" src="#" alt="advantages-image" class="advantages-image" />
     </div>
   </section>
 
@@ -101,38 +100,78 @@
   </section>
 
   <section class="subscription">
-    <div class="subscription__wrapper">
-      <div class="subscription-info subscription-info--base">
-        <h3 class="subscription-info__name subscription-info__name-hit">База</h3>
-        <p class="subscription-inf__price"> 1,99 USD</p>
+    <div class="slider">
+      <div class="subscription__wrapper slider__item">
+        <table class="subscription__item">
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="subscription__text">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="subscription__text">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="subscription__text">Комментарии</td>
+          </tr>
+        </table>
+        <table class="subscription__item--hidden">
+          <tr>
+            <td class="subscription__block">
+              <span class="subscription__plan">База</span>
+              <span class="subscription__price">1,99 USD</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="subscription__text"></td>
+          </tr>
+          <tr>
+            <td class="subscription__text"></td>
+          </tr>
+          <tr>
+            <td class="subscription__text"></td>
+          </tr>
+        </table>
+        <table class="subscription__item--main">
+          <tr>
+            <td class="subscription__block">
+              <span class="subscription__plan">Стандарт</span>
+              <span class="subscription__price">3,99 USD</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="subscription__text--hidden"></td>
+          </tr>
+          <tr>
+            <td class="subscription__text--hidden"></td>
+          </tr>
+          <tr>
+            <td class="subscription__text--hidden"></td>
+          </tr>
+        </table>
+        <table class="subscription__item--hidden">
+          <tr>
+            <td class="subscription__block">
+              <b class="subscription__plan">Анлим</b>
+              <span class="subscription__price">9,99 USD</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="subscription__text"></td>
+          </tr>
+          <tr>
+            <td class="subscription__text"></td>
+          </tr>
+          <tr>
+            <td class="subscription__text"></td>
+          </tr>
+        </table>
       </div>
-      <ul class="subscription__list subscription-list--base">
-        <li class="subscription__item">Розовый фильтр</li>
-        <li class="subscription__item">Смайлики</li>
-        <li class="subscription__item">Комментарии</li>
-      </ul>
-      <div class="subscription-info subscription-info--standard">
-        <h3 class="subscription-info__name subscription-info__name-hit">Стандарт</h3>
-        <p class="subscription-inf__price"> 3,99 USD</p>
-      </div>
-      <ul class="subscription__list subscription__list--standard">
-        <li class="subscription__item">Розовый фильтр</li>
-        <li class="subscription__item">Смайлики</li>
-        <li class="subscription__item">Комментарии</li>
-      </ul>
-      <div class="subscription-info subscription-info--unlim">
-        <h3 class="subscription-info__name subscription-info__name-hit">Анлим</h3>
-        <p class="subscription-inf__price"> 9,99 USD</p>
-      </div>
-      <ul class="subscription__list subscription_list--unlim">
-        <li class="subscription__item">Розовый фильтр</li>
-        <li class="subscription__item">Смайлики</li>
-        <li class="subscription__item">Комментарии</li>
-      </ul>
       <div class="slider__toggles">
-        <button class="slider__toggle slider__toogle--active" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle slider__toggle--active" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
       </div>
     </div>
   </section>
@@ -156,12 +195,12 @@
           <p class="contact__text--inf">ул. Большая <br> Конюшенная, 19/8</p>
         </div>
       </div>
-      <img class="contact__map" src="#" alt="map" />
+      <img class="contact__map" src="img\bg-map-mobile@1x.png" alt="map" />
     </div>
   </section>
 </main>
 
-<footer class="page-footer">
+<footer class="page-footer page-footer--hidden">
   <div class="page-footer__inner">
     <a class="page-footer__logo-link" href="#">
       <img class="page-footer__logo-image" src="img\logo-footer.png" alt="logo" />
