@@ -51,14 +51,23 @@
 .contact {
   min-height: 395px;
   @media(min-width: 960px) {
-    min-width: 1200px;
+    min-width: 940px;
   }
 }
 
 .contact__inner {
+
+  @media(min-width: 660px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+
   @media(min-width: 960px) {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
 }
 

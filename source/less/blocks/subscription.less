@@ -1,19 +1,52 @@
 
+
+.subscription {
+  margin: 0 auto;
+}
+
 .subscription__block {
   display: flex;
   flex-direction: column;
-  min-width: 276px;
+  width: 276px;
   height: 94px;
   background-color: #283645;
   order: -1;
   box-sizing: border-box;
   padding-top: 23px;
   text-align: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  @media(min-width: 660px) {
+    width: 152px;
+    height: 75px;
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
-.subscription__item--main {
-  order: -1;
+.subscription__block::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top:0;
+  width: 74px;
+  height: 73px;
+  left: 0;
 }
+
+.visually-hidden {
+  display: none;
+}
+
+.subscription__item {
+  border-collapse: collapse;
+}
+
 
 .subscription__plan {
   color: #ffffff;
@@ -21,6 +54,14 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media(min-width: 660px) {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
 }
 
 .subscription__price {
@@ -29,6 +70,14 @@
   font-weight: 300;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media(min-width: 660px) {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
 }
 
 .subscription__text {
@@ -45,21 +94,46 @@
   padding-top: 22px;
   padding-bottom: 23px;
   padding-right: 124px;
+  width: 276px;
+  height: 59px;
+  margin-bottom: -5px;
+
+@media(min-width: 660px) {
+  width: 153px;
+  height: 45px;
+  padding-top: 16px;
+  padding-right: 25px;
+  padding-bottom: 14px;
+  padding-left: 15px;
+  text-transform: none;
+}
 }
 
-tr .subscription__text--hidden {
-  display: none;
-}
 
-.subscription__item--hidden {
-  display: none;
+
+.subscription__item--description {
+
+  @media(min-width: 660px) {
+    order: -2;
+    margin-top: 75px;
+  }
 }
 
 .subscription__wrapper {
   min-height: 279px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  overflow: hidden;
+  @media(min-width: 660px) {
+    flex-direction: row;
+    width: 640px;
+  }
+
+}
+
+.slider {
+  padding: 0;
 }
 
 .slider__toggles {
@@ -69,6 +143,8 @@ tr .subscription__text--hidden {
 
 .subscription {
   background-color: #f2f2f2;
+  width: 320px;
+  min-height: 379px;
 
 @media(min-width: 660px) {
   min-width: 660px;

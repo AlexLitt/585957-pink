@@ -1,6 +1,14 @@
 
 .page-footer--hidden {
   display: none;
+
+  @media(min-width: 660px) {
+    display: block;
+  }
+
+  @media(min-width: 960px) {
+    display: block;
+  }
 }
 
 .page-footer__inner {
@@ -12,6 +20,7 @@
   justify-content: space-between;
   min-height: 280px;
   align-items: center;
+
   @media(min-width: 660px) {
     display: flex;
     flex-direction: row;
@@ -19,6 +28,7 @@
     margin: 0 auto;
     justify-content: space-between;
   }
+
   @media(min-width: 960px) {
     width: 940px;
     display: flex;
@@ -31,6 +41,10 @@
 .page-footer__logo-image {
   display: block;
   margin-top: 40px;
+
+  @media(min-width: 660px) {
+    margin: 0;
+  }
 }
 
 .social-list {
@@ -76,4 +90,8 @@
 
 .page-footer__copyright {
   margin-bottom: 40px;
+
+  @media(min-width: 660px) {
+    margin: 0;
+  }
 }
