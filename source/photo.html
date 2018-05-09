@@ -38,8 +38,13 @@
 
 
     <article class="post--panorama">
-        <div class="post__preview post__preview--panorama">
-        <img class="post__image post__image--panorama" src="img\panorama-mobile@1x.jpg" alt="post_image" width="320" height="137" />
+        <div class="post__preview--panorama">
+        <picture>
+          <source  media="(min-width: 660px)" srcset="../img/panorama-tablet@1x.jpg">
+          <source  media="(min-width: 960px)" srcset="../img/panorama-desktop@1x.jpg" >
+          <img class="post__image post__image--panorama" src="img\panorama-mobile@1x.jpg" alt="post_image" width="320" height="137" />
+        </picture>
+
         <span class="post__panorama">Панорама дня</span>
         </div>
         <div class=" post__block post__block--panorama">

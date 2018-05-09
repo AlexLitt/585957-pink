@@ -10,6 +10,8 @@
   padding-bottom: 22px;
 
   @media(min-width: 960px) {
+    margin-top: 48px;
+    padding: 0;
 }
 }
 
@@ -17,8 +19,16 @@
   width: 320px;
   margin: 0 auto;
   min-height: 175px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: relative;
+  margin-top: -65px;
+
   @media(min-width: 660px) {
     width: 640px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    margin-top: -110px;
   }
   @media(min-width: 960px) {
     width: 940px;
@@ -57,7 +67,7 @@
   padding-left: 76px;
   padding-right: 76px;
   padding-bottom: 86px;
-  padding-top: 35px;
+  padding-top: 100px;
   text-align: center;
   margin: 0;
 }
@@ -90,24 +100,27 @@
 .main-nav__list {
 display: none;
 list-style: none;
-@media(min-width: 660px) {
+@media (min-width: 660px) {
   display:none;
 }
 
-@media(min-width: 960px) {
+@media (min-width: 960px) {
   display: flex;
   list-style: none;
   justify-content: space-around;
+  margin-top: 47px;
 }
 }
 
 .site-list__link {
-@media(min-width: 960px) {
+
+@media (min-width: 960px) {
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
   padding-top: 47px;
   padding-bottom: 44px;
+  margin-left: 80px;
 }
 }
