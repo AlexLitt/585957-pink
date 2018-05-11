@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-header--closed">
   <div class="page-header__inner">
     <a class="page-header__logo-link" href="#">
       <img class="page-header__logo-image" src="img\logo-pink-white-mobile.svg" alt="logo" width="75" height="22" />
     </a>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button"></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -99,9 +99,9 @@
         </li>
       </ul>
       <div class="slider__toggles">
-        <button class="slider__toggle slider__toogle--active" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle slider__toogle--active" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
       </div>
     </div>
   </section>
@@ -109,7 +109,7 @@
   <section class="subscription">
     <div class="slider">
       <div class="subscription__wrapper slider__item">
-        <table class="subscription__item">
+        <table class=" subscription__item--hidden">
           <tr>
             <td></td>
           </tr>
@@ -142,19 +142,19 @@
         </table>
         <table class="subscription__item">
           <tr>
-            <td class="subscription__block">
+            <td class="subscription__block subscription__block--hit">
               <span class="subscription__plan">Стандарт</span>
               <span class="subscription__price">3,99 USD</span>
             </td>
           </tr>
           <tr>
-            <td class="subscription__text"></td>
+            <td class="subscription__text">Розовый фильтр</td>
           </tr>
           <tr>
-            <td class="subscription__text"></td>
+            <td class="subscription__text">Смайлики</td>
           </tr>
           <tr>
-            <td class="subscription__text"></td>
+            <td class="subscription__text">Комментарии</td>
           </tr>
         </table>
         <table class="subscription__item">
@@ -183,11 +183,13 @@
     </div>
   </section>
 
+
+  <article contact__article>
+    <p class="contact__headline">Остались вопросы?<br>Свяжитесь с нами!</p>
+  </article>
+
   <section class="contact">
     <div class="contact__wrapper">
-      <div class="contact-headline__container">
-        <p class="contact__headline">Остались вопросы?<br>Свяжитесь с нами!</p>
-      </div>
       <div class="contact__inner">
         <div class="contact__block">
           <p class="contact__text">Звоните:</p>
@@ -202,7 +204,11 @@
           <p class="contact__text--inf">ул. Большая <br> Конюшенная, 19/8</p>
         </div>
       </div>
-      <img class="contact__map" src="img\bg-map-mobile@1x.png" alt="map" />
+      <picture>
+        <source  media="(min-width: 960px)" srcset="img\bg-map-desktop@1x.jpg">
+        <source  media="(min-width: 660px)" srcset="img\bg-map-tablet@1x.jpg">
+        <img class="contact__map" src="img\bg-map-mobile@1x.png" alt="map" />
+      </picture>
     </div>
   </section>
 </main>

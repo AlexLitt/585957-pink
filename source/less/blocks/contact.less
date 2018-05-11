@@ -7,8 +7,10 @@
   padding: 0;
   text-align: center;
   display: block;
-  margin-bottom: 44px;
-  @media(min-width: 660px) {
+  padding-bottom: 70px;
+  height: 118px;
+
+  @media (min-width: 660px) {
     color: #283645;
     font-size: 40px;
     font-weight: 300;
@@ -16,10 +18,12 @@
     text-align: center;
     line-height: 50px;
   }
-  @media(min-width: 960px) {
+
+  @media (min-width: 960px) {
     color: #283645;
     font-size: 50px;
     font-weight: 300;
+    padding-top: 70px;
   }
 }
 
@@ -34,9 +38,15 @@
   font-weight: 700;
   text-align: center;
   margin: 0;
-  @media(min-width: 660px) {
+
+  @media (min-width: 660px) {
     margin-bottom: 0;
   }
+
+  @media (min-width: 960px) {
+    margin-bottom: 0;
+  }
+
 }
 
 .contact__text--inf {
@@ -60,9 +70,12 @@
 }
 
 .contact__inner {
+  position:  absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
   background-color: white;
   width: 340px;
-  z-index: 2;
 
   @media(min-width: 660px) {
     display: flex;
@@ -70,13 +83,20 @@
     flex-wrap:wrap;
     justify-content: space-around;
     width: 640px;
-    margin: 0 auto;
+    margin-left: 64px;
+    right: 20;
+    height: 255px;
+
   }
 
   @media(min-width: 960px) {
+    width: 940px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 42px;
+    padding-top: 26px;
+    height: 173px;
   }
 }
 
@@ -96,8 +116,21 @@
   }
 }
 
+.contact__map::after {
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 35px;
+}
+
 .contact__map {
   position: relative;
   z-index: 1;
+}
 
+.motto__block {
+  width: 320px;
+  margin: 0 auto;
 }

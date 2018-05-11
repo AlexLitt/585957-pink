@@ -1,9 +1,5 @@
 
 
-.subscription {
-  margin: 0 auto;
-}
-
 .subscription__block {
   display: flex;
   flex-direction: column;
@@ -26,17 +22,21 @@
   }
 }
 
-.subscription__block::after {
+.subscription__block--hit::after {
   content: "";
   position: absolute;
   display: block;
-  background-image: url("../../img/bg-hit.svg");
+  background-image: url("../../img/bg-hit.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   top:0;
   width: 74px;
   height: 73px;
   left: 0;
+
+  @media (min-width: 660px) {
+    background-image: url("../../img/bg-hit-tablet.svg");
+  }
 }
 
 .visually-hidden {
@@ -47,6 +47,15 @@
   border-collapse: collapse;
 }
 
+.subscription__item--hidden {
+  display: none;
+
+  @media(min-width: 660px) {
+    display: block;
+    margin-top: 65px;
+    width: 153px;
+  }
+}
 
 .subscription__plan {
   color: #ffffff;
@@ -54,6 +63,8 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  padding-top: 18px;
+  padding-right: 12px;
 
   @media(min-width: 660px) {
     color: #ffffff;
@@ -69,6 +80,7 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
+  padding-right: 12px;
   text-transform: uppercase;
 
   @media(min-width: 660px) {
@@ -125,6 +137,9 @@
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  justify-content: center;
+  padding-top: 65px;
+
   @media(min-width: 660px) {
     flex-direction: row;
     width: 640px;
@@ -144,7 +159,8 @@
 .subscription {
   background-color: #f2f2f2;
   width: 320px;
-  min-height: 379px;
+  min-height: 445px;
+  margin: 0 auto;
 
 @media(min-width: 660px) {
   min-width: 660px;
