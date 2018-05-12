@@ -16,9 +16,11 @@
     color: #283645;
     font-size: 40px;
     font-weight: 300;
-    padding-left: 0px;
+    padding-left: 22px;
     padding-right: 0px;
     line-height: 30px;
+    padding-bottom: 0;
+    padding-top: 32px;
   }
   @media(min-width: 960px) {
     color: #283645;
@@ -33,10 +35,17 @@
 .advantages__headline--bottom {
 
   @media(min-width: 660px)  {
-    padding-top: 15px;
-    padding-bottom: 90px;
+    padding-top: 8px;
     line-height: 50px;
+    padding-left: 36px;
+    padding-right: 9px;
   }
+}
+
+.advantages__headline--top {
+
+    @media (min-width: 660px) {
+    }
 }
 
 .advantages__image--hidden {
@@ -51,14 +60,15 @@
 .advantages__motto {
   margin: 0 auto;
   margin-bottom: 65px;
-  @media(min-width: 660px) {
+
+  @media (min-width: 660px) {
     display: block;
-    width: 585px;
     min-height: 135px;
     margin: 0 auto;
-
+    margin-top: 35px;
   }
-  @media(min-width: 960px) {
+
+  @media (min-width: 960px) {
     min-height: 416px;
     width: 731px;
     margin: 0 auto;
@@ -73,7 +83,13 @@
   line-height: 24px;
   text-align: center;
   order: 2;
-  margin-bottom: 5px;
+
+  @media (min-width: 660px) {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 19px;
+    padding-left: 104px;
+  }
 }
 
 .advantages__text {
@@ -83,6 +99,11 @@
   text-align: center;
   order: 3;
   padding-left: 10px;
+
+  @media (min-width: 660px) {
+    padding-left: 102px;
+    text-align: left;
+  }
 
 }
 
@@ -112,15 +133,15 @@
   padding-top: 18px;
   padding-right: 5px;
 
-
-
   @media(min-width: 660px) {
     text-decoration: none;
     display: flex;
     flex-direction: column;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
-    padding-left: 329px;
+    padding-left: 207px;
+    padding-top: 35px;
+    min-height: 429px;
     }
 
   @media(min-width: 960px) {
@@ -135,12 +156,15 @@
 }
 
 .advantages__list__container {
-  @media(min-width: 660px) {
-    width: 640px;
+
+  @media (min-width: 660px) {
+    width: 660px;
     min-height: 482px;
     margin: 0 auto;
+    margin-top: 65px;
   }
-  @media(min-width: 960px) {
+
+  @media (min-width: 960px) {
     width:940px;
     min-height: 624px;
     margin: 0 auto;

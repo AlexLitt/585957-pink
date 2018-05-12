@@ -1,6 +1,11 @@
 
 .main-nav {
   width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  position: absolute;
+  top: 64px;
 
   @media (min-width: 660px) {
     margin-top: 43px;
@@ -13,15 +18,12 @@
   }
 }
 
-.main-nav--closed {
-  display: none;
-}
 
 .main-nav__toggle {
-  position: relative;
-  margin-top: 21px;
-  margin-left: 179px;
-  margin-bottom: 21px;
+  position: absolute;
+  top: -42px;
+  right: 40px;
+  margin: 0;
   width: 50px;
   height: 24px;
   background-image: url("../img/menu-burger-svg.svg");
@@ -29,7 +31,7 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
-  otline: none;
+  outline: none;
 
 
   @media (min-width:660px) {
@@ -52,7 +54,6 @@
 }
 
 .main-nav--closed {
-  display: none;
 
   @media (min-width: 660px) {
     display: block;

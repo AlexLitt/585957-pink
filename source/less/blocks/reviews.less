@@ -38,11 +38,13 @@
   @media(min-width: 660px) {
     line-height: 30px;
     color: #000000;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     order:1;
-    margin-top: 20px;
+    margin-top: 16px;
     margin-bottom: 0;
+    margin-top: 16px;
+    padding-right: 3px;
   }
 
   @media(min-width: 960px) {
@@ -78,7 +80,7 @@
 
 .review__info {
   display: none;
-  @media(min-width: 660px) {
+  @media (min-width: 660px) {
     display: block;
     color: #283645;
     font-size: 14px;
@@ -86,8 +88,11 @@
     line-height: 30px;
     order:2;
     text-align: center;
+    margin: 0;
+    padding-right: 11px;
   }
-  @media(min-width: 960px) {
+
+  @media (min-width: 960px) {
     margin: 0;
     padding: 0;
   }
@@ -97,6 +102,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 660px) {
+    padding-top: 6px;
+    padding-left: 3px;
+  }
 }
 
 .slider {
@@ -125,28 +135,39 @@
     justify-content: center;
     margin: 0;
     margin-top: 42px;
+    margin-bottom: 18px;
   }
 }
 
 .slider__toggle {
   width: 6px;
-  height: 7px;
+  height: 6px;
   background-color: #283645;
-  background-color: #000000;
   opacity: 0.3;
   outline: 0;
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
   margin-right: 5px;
+
+  @media (min-width: 660px) {
+    margin-right: 7px;
+    margin-left: 11px;
+    margin-bottom: 19px;
+  }
 }
 
 .slider__toggle--active {
   position: relative;
-  outline: none;
   width: 6px;
-  height: 7px;
+  height: 6px;
+  opacity: 0.3;
+  outline: 0;
+  padding: 0;
+  border-radius: 50%;
   border: 3px solid #283645;
-  background-color: #ffffff;
   background-color: #000000;
-  border-radius: px;
+
 }
 
 .slider__item {
